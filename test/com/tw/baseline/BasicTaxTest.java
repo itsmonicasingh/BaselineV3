@@ -14,4 +14,11 @@ public class BasicTaxTest {
         assertEquals(0.0, basicTax.calculateBasicTax(), 0.0d);
     }
 
+    @Test
+    public void shouldReturnZeroIfItemIsBook() {
+        BasicTax basicSalesTax = new BasicTax("book", 10.0);
+
+        assertEquals(0.0, basicSalesTax.calculateBasicTax(), 0.0d);
+    }
+
 }

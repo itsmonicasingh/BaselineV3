@@ -21,4 +21,25 @@ public class BasicTaxTest {
         assertEquals(0.0, basicSalesTax.calculateBasicTax(), 0.0d);
     }
 
+    @Test
+    public void shouldReturnZeroIfItemIsChocolateBar() {
+        BasicTax basicSalesTax = new BasicTax("chocolate bar", 10.0);
+
+        assertEquals(0.0, basicSalesTax.calculateBasicTax(), 0.0d);
+    }
+
+    @Test
+    public void shouldReturnZeroIfItemIsChocolates() {
+        BasicTax basicSalesTax = new BasicTax("chocolates", 10.0);
+
+        assertEquals(0.0, basicSalesTax.calculateBasicTax(), 0.0d);
+    }
+
+    @Test
+    public void shouldReturnZeroIfItemIsPills() {
+        BasicTax basicSalesTax = new BasicTax("chocolates", 10.0);
+
+        assertEquals(0.0, basicSalesTax.calculateBasicTax(), 0.0d);
+    }
+
 }

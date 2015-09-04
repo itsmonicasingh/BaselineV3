@@ -14,6 +14,7 @@ public class BasicTax {
         this.itemName = itemName;
         this.itemPrice = itemPrice;
     }
+
     public double calculateBasicTax() {
         if (isExempted.contains(itemName)) {
             return 0.0;

@@ -9,7 +9,7 @@ public class AdditionalTaxTest {
 
     @Test
     public void shouldReturnZeroIfAmountIsZero() {
-        AdditionalTax additionalTax = new AdditionalTax();
+        AdditionalTax additionalTax = new AdditionalTax(" ", 0.0);
 
         assertEquals(0.0, additionalTax.calculateAdditionalTax(), 0.0d);
     }

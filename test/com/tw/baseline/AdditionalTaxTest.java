@@ -13,4 +13,11 @@ public class AdditionalTaxTest {
 
         assertEquals(0.0, additionalTax.calculateAdditionalTax(), 0.0d);
     }
+
+    @Test
+    public void shouldReturnZeroWhenItemIsNotImported() {
+        AdditionalTax additionalSalesTax = new AdditionalTax("heheheh I am not from outside", 50.0);
+        assertEquals(0.0, additionalSalesTax.calculateAdditionalTax(), 0.0d);
+    }
+
 }

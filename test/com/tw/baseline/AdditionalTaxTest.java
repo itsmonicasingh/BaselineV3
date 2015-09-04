@@ -20,4 +20,10 @@ public class AdditionalTaxTest {
         assertEquals(0.0, additionalSalesTax.calculateAdditionalTax(), 0.0d);
     }
 
+    @Test
+    public void shouldReturnTaxFivePercentWhenItemIsImported() {
+        AdditionalTax additionalSalesTax = new AdditionalTax("Your bad luck!! I am an imported item", 50.0);
+        assertEquals(25.0, additionalSalesTax.calculateAdditionalTax(), 0.0d);
+    }
+
 }
